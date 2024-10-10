@@ -1,0 +1,573 @@
+/* Style untuk nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 251, 230);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger {
+  display: none; /* Tersembunyi secara default */
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 80px; /* Spasi antara item menu */
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 130px;
+}
+
+nav a {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #e50014;
+}
+
+#darkMode nav a:hover {
+  font-weight: bold;
+  color: #e50014;
+}
+
+/* Style umum untuk body */
+body {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Style untuk header */
+.jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.jumbotron img {
+  max-width: 100%;
+  height: auto;
+}
+
+.manisee {
+  position: absolute;
+  color: white;
+  font-family: Sarina;
+}
+
+.manisee h1 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #666666;
+  font-size: 18px;
+}
+
+/* Style untuk konten utama */
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 0 20px 40px 20px;
+}
+
+#kata {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px 20px;
+}
+
+#kata h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+#kata p {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  width: 65%;
+}
+
+/* Style untuk card */
+.card {
+  display: flex;
+  background-color: #fdd8ca;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px 20px 20px;
+  z-index: 1;
+  gap: 20px;
+}
+
+.container-wisata {
+  padding: 20px;
+}
+
+.featured-image {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Style untuk carousel */
+.carousel-container {
+  margin-top: 20px;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 70%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Buat icon prev/next lebih terlihat */
+  border-radius: 50%;
+}
+
+.carousel-button.left {
+  left: 0;
+}
+
+.carousel-button.right {
+  right: 0;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Menyembunyikan scrollbar */
+}
+
+.item img {
+  width: 100%;
+  height: 300px;
+}
+
+/* Modal gambar responsive */
+.modal-body img {
+  width: 100%;
+  height: auto;
+}
+
+/* Menambahkan transisi ke carousel */
+.carousel .carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Memperindah tombol modal */
+.modal-footer button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-footer button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling untuk header modal */
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-header h5 {
+  font-size: 20px;
+}
+
+.modal-body p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* Style untuk aside */
+aside {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aside-head {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aside-fot {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+aside h2 {
+  margin: 0;
+}
+
+aside h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+aside p {
+  margin: 0;
+}
+
+tbody td {
+  padding-left: 10px;
+}
+
+.container-wisata h2 {
+  margin-bottom: 20px;
+}
+
+/* Style untuk Dark Mode */
+#darkMode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#darkMode nav {
+  background-color: #333;
+}
+
+#darkMode .card {
+  background-color: #84002f;
+  color: #fff;
+}
+
+#darkMode footer {
+  background-color: #333;
+  color: #ddd;
+}
+
+#darkMode .modal-header h5 {
+  color: #ddd;
+}
+
+#darkMode .modal-body p {
+  color: #ddd;
+}
+
+#darkMode a {
+  color: #ddd;
+}
+
+#darkMode .icon {
+  color: #f39c12;
+}
+
+#darkMode .modal-header {
+  background-color: #222;
+}
+
+#darkMode .btn-close {
+  filter: invert(1); /* Membalikkan warna tombol menjadi putih */
+}
+
+#darkMode .modal-content {
+  background-color: #222;
+}
+
+@media screen and (max-width: 1045px) {
+  main {
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+    gap: 25px;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .jumbotron h1 {
+    font-size: 24px;
+  }
+
+  #kata {
+    padding: 80px 20px;
+  }
+
+  #kata h2 {
+    font-size: 32px;
+  }
+
+  #kata p {
+    font-size: 14px;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0;
+    gap: 25px;
+  }
+
+  #content h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  #content p {
+    font-size: 14px;
+  }
+
+  #wisata h3 {
+    font-size: 24px;
+  }
+}
+
+.carousel-item h3 {
+  font-size: 24px;
+}
+
+.carousel img {
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.aside-head {
+  gap: 16px;
+}
+
+.aside-fot {
+  gap: 16px;
+}
+
+aside h2 {
+  font-size: 32px;
+}
+
+aside h3 {
+  font-size: 24px;
+}
+
+aside p {
+  font-size: 14px;
+}
+
+.container-wisata h2 {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 821px) {
+  #content {
+    gap: 20px;
+  }
+
+  .card {
+    gap: 16px;
+  }
+
+  nav {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block; /* Tampilkan hamburger pada perangkat kecil */
+    size: 20px;
+  }
+
+  .navbar {
+    justify-content: right;
+  }
+
+  .nav-links {
+    display: none;
+    /*Sembunyikanmenuutamapadaperangkatkecil*/
+    flex-direction: column;
+    /*Vertikal*/
+    position: absolute;
+    /*Dapatmengapung*/
+    top: 60px;
+    /*Menyesuaikanposisimenu*/ /*left: 0;
+    */
+    background-color: #fdd8ca;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #darkMode .nav-links {
+    background-color: #222;
+  }
+
+  .nav-links.active {
+    display: flex; /* Tampilkan menu saat diaktifkan */
+    align-items: center;
+    gap: 40px;
+    padding: 20px 60px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .container-wisata {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    gap: 8px;
+  }
+
+  #kata {
+    padding: 40px 20px;
+    gap: 8px;
+  }
+
+  #kata h2 {
+    font-size: 20px;
+  }
+
+  #kata p {
+    font-size: 16px;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .card {
+    gap: 8px;
+  }
+
+  #content h2 {
+    font-size: 20px;
+  }
+
+  #content p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .aside-head h2 {
+    font-size: 20px;
+  }
+
+  .aside-head p {
+    font-size: 14px;
+  }
+
+  .aside-fot h3 {
+    font-size: 18px;
+  }
+
+  .container-wisata h2 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .modal-body p {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
